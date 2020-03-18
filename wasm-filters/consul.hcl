@@ -5,9 +5,16 @@ container "consul" {
 
   command = ["consul", "agent", "-config-file=/config/dc1.hcl"]
 
+  # Consul config
   volume {
     source      = "./consul_config/dc1.hcl"
     destination = "/config/dc1.hcl"
+  }
+
+  # Config files used by remote exec
+  volume {
+    source = "./consul_config"
+    destination = "/files"
   }
 
   # Local network

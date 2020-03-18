@@ -8,7 +8,7 @@ service {
         proxy {
         upstreams {
           destination_name = "web"
-          local_bind_address = "127.0.0.1"
+          local_bind_address = "0.0.0.0"
           local_bind_port = 9190
 
           config {
@@ -16,14 +16,14 @@ service {
             wasm_filters = [
               {
                 name = "add_header"
-                location = "./optimized.wasm"
+                location = "/filters/optimized.wasm"
               }
             ]
           }
         }
         upstreams {
           destination_name = "api"
-          local_bind_address = "127.0.0.1"
+          local_bind_address = "0.0.0.0"
           local_bind_port = 9191
         }
       }
