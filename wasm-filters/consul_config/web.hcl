@@ -6,7 +6,9 @@ service {
   connect { 
     sidecar_service { 
       proxy {
-        config {
+        upstreams {
+          destination_name = "api"
+          local_bind_port = 9091
         }
       }
     }

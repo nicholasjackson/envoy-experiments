@@ -22,6 +22,7 @@ class AddHeader extends Context {
     super();
     this.root_context = root_context;
   }
+
   onResponseHeaders(a: u32): FilterHeadersStatusValues {
     const root_context = this.root_context;
 

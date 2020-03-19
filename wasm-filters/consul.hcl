@@ -45,4 +45,10 @@ container "consul" {
     remote = 8502
     host = 8502
   }
+
+  # Ensure the consul server is running before continuing
+  health_check {
+    timeout = "30s"
+    http = "http://localhost:8500/v1/status/leader"
+  }
 }

@@ -1,6 +1,5 @@
 FROM nicholasjackson/consul-dev:latest as consul 
-FROM ubuntu:latest
+FROM nicholasjackson/fake-service:vm-v0.9.0
 
-RUN apt-get update && apt-get install -y wget
-RUN wget https://github.com/nicholasjackson/envoy-experiments/releases/download/envoy/envoy && mv ./envoy /bin/envoy && chmod +x /bin/envoy
-COPY --from=consul /bin/consul /bin/consul
+COPY --from=consul /bin/consul /usr/local/bin/consul
+RUN wget https://github.com/nicholasjackson/envoy-experiments/releases/download/envoy/envoy && mv ./envoy /usr/local/bin/envoy && chmod +x /usr/local/bin/envoy
