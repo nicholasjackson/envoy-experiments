@@ -15,3 +15,15 @@ This example shows how to route to two different containers using HTTP path runn
 
 # WASM HTTP Filters for Consul Service Mesh 
 This example shows how WASM HTTP filters can be used with Envoy proxy
+
+## Install Shipyard
+
+```
+curl https://shipyard.run/install | bash -s
+```
+
+## Create the environment
+
+```
+shipyard run ./wasm-filters
+```
