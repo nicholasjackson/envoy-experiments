@@ -27,7 +27,7 @@ class AddHeader extends Context {
     const root_context = this.root_context;
 
     if (root_context.configuration == "") {
-      stream_context.headers.response.add("hello", "world!");
+      stream_context.headers.response.add("hello", "YouTube!");
     } else {
       stream_context.headers.response.add("hello", root_context.configuration);
     }
