@@ -24,4 +24,38 @@ npm run asbuild
 <Terminal target="node.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
 <p></p>
 
-The built WASM module can be found in the folder `wasm-filter/build`
+The built WASM module can be found in the folder `wasm-filter/build`, this folder is mounted into the API container
+at the path /filters so that Envoy can load it.
+
+You can restart the api container to load the new WASM module, using the following commands:
+
+```
+shipyard taint container.api
+shipyard run
+```
+
+<Terminal target="tools.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
+<p></p>
+
+Finally you can test the new filter:
+
+```
+curl -v web.container.shipyard:9090
+```
+
+<Terminal target="tools.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
+<p></p>
+
+You should see the headers you added in your WASM filter in the output from the service.
+
+```
+"Headers": {
+  "Content-Length": "267",
+  "Content-Type": "text/plain; charset=utf-8",
+  "Date": "Thu, 19 Mar 2020 15:40:40 GMT",
+  "Hello": "world!",
+  "Server": "envoy",
+  "Vary": "Origin",
+  "X-Envoy-Upstream-Service-Time": "0"
+},
+```

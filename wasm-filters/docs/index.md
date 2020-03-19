@@ -113,3 +113,58 @@ class AddHeader extends Context {
 ## Configuring filters in Consul 
 
 To configure the filters in Consul you need to be using a special experimental branch which has the WASM filter support built in.
+A WASM fitler can be either added to the public listener for the service as shown in the example below:
+
+```js
+service {
+  name = "api"
+  id = "api-v1"
+  port = 9090
+
+  connect { 
+    sidecar_service {
+      proxy {
+        config {
+          protocol = "http"
+          wasm_filters = [
+            {
+              name = "add_header"
+              location = "/filters/optimized.wasm"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+Or it can be added to the upstream for a service:
+
+```js
+service {
+  name = "web"
+  id = "web-v1"
+  port = 9090
+
+  connect { 
+    sidecar_service { 
+      proxy {
+        upstreams {
+          destination_name = "api"
+          local_bind_port = 9091
+
+          config {
+            wasm_filters = [
+              {
+                name = "add_header"
+                location = "/filters/optimized.wasm"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+```
