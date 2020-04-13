@@ -12,7 +12,7 @@ To build the WASM filter first install the dependencies using `npm`
 npm install
 ```
 
-<Terminal target="node.container.shipyard" shell="/bin/bash" workdir="/files" user="root" expanded />
+<Terminal target="node.container.shipyard.run" shell="/bin/bash" workdir="/files" user="root" expanded />
 <p></p>
 
 You can then build the filter using the command `npm run asm`
@@ -21,7 +21,7 @@ You can then build the filter using the command `npm run asm`
 npm run asbuild
 ```
 
-<Terminal target="node.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
+<Terminal target="node.container.shipyard.run" shell="/bin/bash" workdir="/files" user="root" />
 <p></p>
 
 The built WASM module can be found in the folder `wasm-filter/build`, this folder is mounted into the API container
@@ -34,16 +34,16 @@ shipyard taint container.api
 shipyard run
 ```
 
-<Terminal target="tools.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
+<Terminal target="shipyard.container.shipyard.run" shell="/bin/bash" workdir="/" user="root" />
 <p></p>
 
 Finally you can test the new filter:
 
 ```
-curl -v web.container.shipyard:9090
+curl -v web.container.shipyard.run:9090
 ```
 
-<Terminal target="tools.container.shipyard" shell="/bin/bash" workdir="/files" user="root" />
+<Terminal target="node.container.shipyard.run" shell="/bin/bash" workdir="/files" user="root" />
 <p></p>
 
 You should see the headers you added in your WASM filter in the output from the service.

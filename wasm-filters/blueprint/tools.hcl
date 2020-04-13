@@ -7,27 +7,26 @@ container "node" {
 
   # WASM fitler source
   volume {
-    source      = "./wasm-filter"
+    source      = "../wasm-filter"
     destination = "/files"
+  }
+
+  network {
+      name = "network.local"
   }
 }
 
-container "tools" {
+container "shipyard" {
   image   {
-    name = "shipyardrun/tools:latest"
+    name = "shipyardrun/tools:v0.0.16"
   }
 
   command = ["tail", "-f", "/dev/null"]
 
-  # WASM fitler source
+  # Shipyard config
   volume {
-    source      = "${env("HOME")}/.shipyard"
+    source      = "${shipyard()}"
     destination = "/root/.shipyard"
-  }
-  
-  volume {
-    source      = "./"
-    destination = "/files"
   }
   
   volume {
@@ -37,5 +36,10 @@ container "tools" {
 
   network {
       name = "network.local"
+  }
+
+  env {
+    key = "CONSUL_HTTP_ADDR"
+    value = "http://consul.container.shipyard.run:8500"
   }
 }

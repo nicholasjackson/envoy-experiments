@@ -25,7 +25,8 @@ container "consul" {
   port {
     local = 8500
     remote = 8500
-    host = 8500
+    host = 18500
+    open_in_browser = "/ui"
   }
   
   port {

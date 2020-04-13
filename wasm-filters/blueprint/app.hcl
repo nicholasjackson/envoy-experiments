@@ -16,7 +16,7 @@ container "web" {
 
   env {
       key = "CONSUL_SERVER"
-      value = "consul.container.shipyard"
+      value = "consul.container.shipyard.run"
   }
   
   env {
@@ -58,7 +58,7 @@ container "api" {
   
   # Mount the WASM filter 
   volume {
-    source      = "./wasm-filter/build/optimized.wasm"
+    source      = "../wasm-filter/build/optimized.wasm"
     destination = "/filters/optimized.wasm"
   }
 
@@ -69,7 +69,7 @@ container "api" {
 
   env {
       key = "CONSUL_SERVER"
-      value = "consul.container.shipyard"
+      value = "consul.container.shipyard.run"
   }
   
   env {
