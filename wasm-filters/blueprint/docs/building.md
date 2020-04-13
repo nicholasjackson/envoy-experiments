@@ -27,15 +27,19 @@ npm run asbuild
 The built WASM module can be found in the folder `wasm-filter/build`, this folder is mounted into the API container
 at the path /filters so that Envoy can load it.
 
-You can restart the api container to load the new WASM module, using the following commands:
+You can restart the api container to load the new WASM module. Run the following commands in the terminal you used to start this blueprint:
 
 ```
 shipyard taint container.api
-shipyard run
-```
+shipyard run ./blueprint
+Running configuration from:  ./blueprint
 
-<Terminal target="shipyard.container.shipyard.run" shell="/bin/bash" workdir="/" user="root" />
-<p></p>
+2020-04-13T17:26:08.876+0100 [INFO]  Destroy Container: ref=api
+2020-04-13T17:26:08.877+0100 [INFO]  Creating Container: ref=api
+2020-04-13T17:26:08.952+0100 [DEBUG] Image exists in local cache: image=nicholasjackson/fake-service:vm-dev
+2020-04-13T17:26:08.952+0100 [INFO]  Creating Container: ref=api
+2020-04-13T17:26:08.974+0100 [DEBUG] Attaching container to network: ref=api network=network.local
+```
 
 Finally you can test the new filter:
 
