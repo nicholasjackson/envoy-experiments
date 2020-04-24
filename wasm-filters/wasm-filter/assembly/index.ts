@@ -1,5 +1,5 @@
 export * from "@solo-io/proxy-runtime/proxy";
-import { RootContext, Context, RootContextHelper, ContextHelper, registerRootContext, FilterHeadersStatusValues, stream_context } from "@solo-io/proxy-runtime";
+import { RootContext, Context, RootContextHelper, ContextHelper, registerRootContext, FilterHeadersStatusValues, stream_context, LogLevelValues, log } from "@solo-io/proxy-runtime";
 
 class AddHeaderRoot extends RootContext {
   configuration : string;
@@ -25,9 +25,10 @@ class AddHeader extends Context {
 
   onResponseHeaders(a: u32): FilterHeadersStatusValues {
     const root_context = this.root_context;
+    log(LogLevelValues.debug, "something");
 
     if (root_context.configuration == "") {
-      stream_context.headers.response.add("hello", "Consulate");
+      stream_context.headers.response.add("hello", "Consulate dfdfdf");
     } else {
       stream_context.headers.response.add("hello", root_context.configuration);
     }
