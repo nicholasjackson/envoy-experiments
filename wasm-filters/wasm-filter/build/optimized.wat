@@ -4,8 +4,8 @@
  (type $i32_=>_none (func (param i32)))
  (type $i32_i32_=>_none (func (param i32 i32)))
  (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
- (type $none_=>_i32 (func (result i32)))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
+ (type $none_=>_i32 (func (result i32)))
  (type $none_=>_none (func))
  (type $i32_i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32 i32)))
  (type $i32_i32_i32_i32_=>_i32 (func (param i32 i32 i32 i32) (result i32)))
@@ -31,16 +31,17 @@
  (data (i32.const 704) "\04\00\00\00\01\00\00\00\01\00\00\00\04\00\00\00:\00(")
  (data (i32.const 736) "\12\00\00\00\01\00\00\00\01\00\00\00\12\00\00\00s\00o\00m\00e\00t\00h\00i\00n\00g")
  (data (i32.const 788) "\01\00\00\00\01")
- (data (i32.const 800) "\n\00\00\00\01\00\00\00\01\00\00\00\n\00\00\00h\00e\00l\00l\00o")
- (data (i32.const 832) " \00\00\00\01\00\00\00\01\00\00\00 \00\00\00C\00o\00n\00s\00u\00l\00a\00t\00e\00 \00d\00f\00d\00f\00d\00f")
- (data (i32.const 880) "\14\00\00\00\01\00\00\00\01\00\00\00\14\00\00\00a\00d\00d\00_\00h\00e\00a\00d\00e\00r")
- (data (i32.const 928) "$\00\00\00\01\00\00\00\01\00\00\00$\00\00\00K\00e\00y\00 \00d\00o\00e\00s\00 \00n\00o\00t\00 \00e\00x\00i\00s\00t")
- (data (i32.const 992) "\16\00\00\00\01\00\00\00\01\00\00\00\16\00\00\00~\00l\00i\00b\00/\00m\00a\00p\00.\00t\00s")
- (data (i32.const 1040) "\1c\00\00\00\01\00\00\00\01\00\00\00\1c\00\00\00p\00l\00u\00g\00i\00n\00_\00r\00o\00o\00t\00_\00i\00d")
- (data (i32.const 1088) ",\00\00\00\01\00\00\00\01\00\00\00,\00\00\00r\00e\00t\00u\00r\00n\00i\00n\00g\00 \00c\00o\00n\00t\00e\00x\00t\00 \00f\00o\00r\00 ")
- (data (i32.const 1152) "\08\00\00\00\01\00\00\00\01\00\00\00\08\00\00\00n\00u\00l\00l")
- (data (i32.const 1184) "*\00\00\00\01\00\00\00\01\00\00\00*\00\00\00d\00i\00d\00 \00n\00o\00t\00 \00f\00i\00n\00d\00 \00r\00o\00o\00t\00 \00i\00d\00 ")
- (data (i32.const 1248) "\19\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\10\00\00\00\n\00\00\00\10\00\00\00\n\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\98\00A\00\00\00\00\00\10\00\00\00\0c\00\00\00\93\00\00\00\02\00\00\00\10\00\00\00\0c\00\00\00\10\00\00\00\0d\00\00\00\10\00\00\00\0d")
+ (data (i32.const 800) "\0e\00\00\00\01\00\00\00\01\00\00\00\0e\00\00\00V\00e\00r\00s\00i\00o\00n")
+ (data (i32.const 832) "\n\00\00\00\01\00\00\00\01\00\00\00\n\00\00\00v\001\00.\001\002")
+ (data (i32.const 864) "\n\00\00\00\01\00\00\00\01\00\00\00\n\00\00\00h\00e\00l\00l\00o")
+ (data (i32.const 896) "\14\00\00\00\01\00\00\00\01\00\00\00\14\00\00\00a\00d\00d\00_\00h\00e\00a\00d\00e\00r")
+ (data (i32.const 944) "$\00\00\00\01\00\00\00\01\00\00\00$\00\00\00K\00e\00y\00 \00d\00o\00e\00s\00 \00n\00o\00t\00 \00e\00x\00i\00s\00t")
+ (data (i32.const 1008) "\16\00\00\00\01\00\00\00\01\00\00\00\16\00\00\00~\00l\00i\00b\00/\00m\00a\00p\00.\00t\00s")
+ (data (i32.const 1056) "\1c\00\00\00\01\00\00\00\01\00\00\00\1c\00\00\00p\00l\00u\00g\00i\00n\00_\00r\00o\00o\00t\00_\00i\00d")
+ (data (i32.const 1104) ",\00\00\00\01\00\00\00\01\00\00\00,\00\00\00r\00e\00t\00u\00r\00n\00i\00n\00g\00 \00c\00o\00n\00t\00e\00x\00t\00 \00f\00o\00r\00 ")
+ (data (i32.const 1168) "\08\00\00\00\01\00\00\00\01\00\00\00\08\00\00\00n\00u\00l\00l")
+ (data (i32.const 1200) "*\00\00\00\01\00\00\00\01\00\00\00*\00\00\00d\00i\00d\00 \00n\00o\00t\00 \00f\00i\00n\00d\00 \00r\00o\00o\00t\00 \00i\00d\00 ")
+ (data (i32.const 1264) "\19\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\10\00\00\00\n\00\00\00\10\00\00\00\n\00\00\00\10\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\10\00\00\00\00\00\00\00\98 \01\00\00\00\00\00\98\00A\00\00\00\00\00\10\00\00\00\0c\00\00\00\93\00\00\00\02\00\00\00\10\00\00\00\0c\00\00\00\10\00\00\00\0d\00\00\00\10\00\00\00\0d")
  (table $0 50 funcref)
  (elem (i32.const 1) $~lib/@solo-io/proxy-runtime/runtime/BaseContext#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/BaseContext#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/BaseContext#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|4 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|6 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|3 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|4 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|3 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|4 $~lib/@solo-io/proxy-runtime/runtime/RootContext#constructor~anonymous|4 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/Context#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/BaseContext#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|0 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|3 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|3 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|9 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|1 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|5 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|13 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|14 $~lib/@solo-io/proxy-runtime/runtime/ContextHelper<assembly/index/AddHeader>#constructor~anonymous|14 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|7 $~lib/@solo-io/proxy-runtime/runtime/RootContextHelper<assembly/index/AddHeaderRoot>#constructor~anonymous|3 $start:assembly/index~anonymous|0)
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
@@ -53,7 +54,7 @@
  (global $~lib/@solo-io/proxy-runtime/runtime/root_factory (mut i32) (i32.const 0))
  (global $~lib/rt/tlsf/collectLock (mut i32) (i32.const 0))
  (global $~argumentsLength (mut i32) (i32.const 0))
- (global $~lib/rt/__rtti_base i32 (i32.const 1248))
+ (global $~lib/rt/__rtti_base i32 (i32.const 1264))
  (export "__setArgumentsLength" (func $~setArgumentsLength))
  (export "memory" (memory $0))
  (export "__alloc" (func $~lib/rt/tlsf/__alloc))
@@ -125,7 +126,7 @@
  )
  (func $~lib/rt/pure/__retain (; 6 ;) (param $0 i32) (result i32)
   local.get $0
-  i32.const 1452
+  i32.const 1468
   i32.gt_u
   if
    local.get $0
@@ -137,7 +138,7 @@
  )
  (func $~lib/rt/pure/__release (; 7 ;) (param $0 i32)
   local.get $0
-  i32.const 1452
+  i32.const 1468
   i32.gt_u
   if
    local.get $0
@@ -1630,11 +1631,11 @@
    if
     unreachable
    end
-   i32.const 1456
+   i32.const 1472
    local.tee $0
    i32.const 0
    i32.store
-   i32.const 3024
+   i32.const 3040
    i32.const 0
    i32.store
    loop $for-loop|0
@@ -1645,7 +1646,7 @@
      local.get $1
      i32.const 2
      i32.shl
-     i32.const 1456
+     i32.const 1472
      i32.add
      i32.const 0
      i32.store offset=4
@@ -1663,7 +1664,7 @@
        i32.add
        i32.const 2
        i32.shl
-       i32.const 1456
+       i32.const 1472
        i32.add
        i32.const 0
        i32.store offset=96
@@ -1681,13 +1682,13 @@
      br $for-loop|0
     end
    end
-   i32.const 1456
-   i32.const 3040
+   i32.const 1472
+   i32.const 3056
    memory.size
    i32.const 16
    i32.shl
    call $~lib/rt/tlsf/addMemory
-   i32.const 1456
+   i32.const 1472
    global.set $~lib/rt/tlsf/ROOT
   end
   local.get $0
@@ -2161,7 +2162,7 @@
   i32.sub
   i32.load offset=8
   local.tee $0
-  i32.const 1248
+  i32.const 1264
   i32.load
   i32.le_u
   if
@@ -2176,7 +2177,7 @@
     local.get $0
     i32.const 3
     i32.shl
-    i32.const 1252
+    i32.const 1268
     i32.add
     i32.load offset=4
     local.tee $0
@@ -2562,7 +2563,7 @@
   local.get $2
   call $~lib/memory/memory.copy
   local.get $1
-  i32.const 1452
+  i32.const 1468
   i32.ge_u
   if
    local.get $0
@@ -3507,32 +3508,32 @@
   drop
   i32.const 0
  )
- (func $~lib/@solo-io/proxy-runtime/runtime/add_header_map_value_string (; 82 ;) (param $0 i32) (param $1 i32)
-  (local $2 i32)
-  i32.const 816
-  call $~lib/string/String.UTF8.encode
-  local.set $2
+ (func $~lib/@solo-io/proxy-runtime/runtime/add_header_map_value_string (; 82 ;) (param $0 i32) (param $1 i32) (param $2 i32)
   local.get $1
   call $~lib/string/String.UTF8.encode
   local.set $1
+  local.get $2
+  call $~lib/string/String.UTF8.encode
+  local.set $2
   local.get $0
-  local.get $2
-  local.get $2
+  local.get $1
+  local.get $1
   call $~lib/arraybuffer/ArrayBuffer#get:byteLength
-  local.get $1
-  local.get $1
+  local.get $2
+  local.get $2
   call $~lib/arraybuffer/ArrayBuffer#get:byteLength
   call $~lib/@solo-io/proxy-runtime/imports/proxy_add_header_map_value
   drop
-  local.get $2
-  call $~lib/rt/pure/__release
   local.get $1
   call $~lib/rt/pure/__release
+  local.get $2
+  call $~lib/rt/pure/__release
  )
- (func $~lib/@solo-io/proxy-runtime/runtime/HeaderStreamManipulator#add (; 83 ;) (param $0 i32) (param $1 i32)
+ (func $~lib/@solo-io/proxy-runtime/runtime/HeaderStreamManipulator#add (; 83 ;) (param $0 i32) (param $1 i32) (param $2 i32)
   local.get $0
   i32.load
   local.get $1
+  local.get $2
   call $~lib/@solo-io/proxy-runtime/runtime/add_header_map_value_string
  )
  (func $assembly/index/AddHeader#onResponseHeaders (; 84 ;) (param $0 i32) (result i32)
@@ -3550,12 +3551,14 @@
    global.get $~lib/@solo-io/proxy-runtime/runtime/stream_context
    i32.load
    i32.load offset=4
+   i32.const 816
    i32.const 848
    call $~lib/@solo-io/proxy-runtime/runtime/HeaderStreamManipulator#add
   else
    global.get $~lib/@solo-io/proxy-runtime/runtime/stream_context
    i32.load
    i32.load offset=4
+   i32.const 880
    local.get $0
    i32.load offset=48
    call $~lib/@solo-io/proxy-runtime/runtime/HeaderStreamManipulator#add
@@ -3985,8 +3988,8 @@
   (local $2 i32)
   (local $3 i32)
   local.get $0
-  i32.const 896
-  i32.const 896
+  i32.const 912
+  i32.const 912
   call $~lib/util/hash/hashStr
   local.tee $2
   call "$~lib/map/Map<~lib/string/String,() => ~lib/@solo-io/proxy-runtime/runtime/RootContext>#find"
@@ -4039,7 +4042,7 @@
    i32.mul
    i32.add
    local.tee $1
-   i32.const 896
+   i32.const 912
    i32.store
    local.get $1
    i32.const 49
@@ -4161,7 +4164,7 @@
   local.tee $0
   i32.eqz
   if
-   i32.const 944
+   i32.const 960
    call $~lib/@solo-io/proxy-runtime/runtime/abort_proc_exit
    unreachable
   end
@@ -4220,7 +4223,7 @@
  (func $~lib/@solo-io/proxy-runtime/runtime/get_property (; 105 ;) (result i32)
   (local $0 i32)
   (local $1 i32)
-  i32.const 1056
+  i32.const 1072
   call $~lib/string/String.UTF8.encode
   local.tee $1
   call $~lib/arraybuffer/ArrayBuffer#get:byteLength
@@ -4494,16 +4497,16 @@
   local.tee $1
   i32.eqz
   if
-   i32.const 1168
+   i32.const 1184
    local.set $3
    local.get $1
-   i32.const 1168
+   i32.const 1184
    i32.ne
    if
     local.get $1
     call $~lib/rt/pure/__release
    end
-   i32.const 1168
+   i32.const 1184
    local.set $1
   end
   local.get $0
@@ -4546,7 +4549,7 @@
  )
  (func $~lib/string/String.__concat (; 110 ;) (param $0 i32) (param $1 i32) (result i32)
   local.get $0
-  i32.const 1168
+  i32.const 1184
   local.get $0
   select
   local.get $1
@@ -4580,7 +4583,7 @@
    local.tee $1
    i32.eqz
    if
-    i32.const 944
+    i32.const 960
     call $~lib/@solo-io/proxy-runtime/runtime/abort_proc_exit
     unreachable
    end
@@ -4599,7 +4602,7 @@
    local.get $1
    call $~lib/map/Map<u32,~lib/@solo-io/proxy-runtime/runtime/BaseContext>#set
    i32.const 3
-   i32.const 1104
+   i32.const 1120
    local.get $2
    call $~lib/string/String.__concat
    local.tee $0
@@ -4614,7 +4617,7 @@
    return
   end
   i32.const 3
-  i32.const 1200
+  i32.const 1216
   local.get $2
   call $~lib/string/String.__concat
   local.tee $3
@@ -5122,7 +5125,7 @@
  )
  (func $~lib/rt/pure/__visit (; 139 ;) (param $0 i32)
   local.get $0
-  i32.const 1452
+  i32.const 1468
   i32.lt_u
   if
    return

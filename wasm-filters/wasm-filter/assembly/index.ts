@@ -28,7 +28,7 @@ class AddHeader extends Context {
     log(LogLevelValues.debug, "something");
 
     if (root_context.configuration == "") {
-      stream_context.headers.response.add("hello", "Consulate dfdfdf");
+      stream_context.headers.response.add("Version", "v1.12");
     } else {
       stream_context.headers.response.add("hello", root_context.configuration);
     }
