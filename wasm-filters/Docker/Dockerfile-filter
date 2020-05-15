@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+RUN mkdir /filters
+
+RUN apt update && apt install -y wget 
+
+RUN wget https://github.com/nicholasjackson/envoy-experiments/releases/download/envoy/envoy && mv ./envoy /usr/local/bin/envoy && chmod +x /usr/local/bin/envoy
+
+COPY optimized.wasm /filters/optimized.wasm
