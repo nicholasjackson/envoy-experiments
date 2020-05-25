@@ -79,6 +79,7 @@ spec:
         "consul.hashicorp.com/service-tags": "v1"
         "consul.hashicorp.com/connect-service-protocol": "http"
         "consul.hashicorp.com/connect-wasm-filter-add_header": "/filters/optimized.wasm"
+        "consul.hashicorp.com/connect-inject-image": "nicholasjackson/example-wasm-filter:dev"
     spec:
       containers:
       - name: api

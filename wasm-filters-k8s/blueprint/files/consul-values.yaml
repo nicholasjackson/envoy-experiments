@@ -57,6 +57,3 @@ connectInject:
     # either through this setting or individual annotation, for a service to be
     # registered correctly. Valid values are "http", "http2", "grpc" and "tcp".
     defaultProtocol: "http"
-
-    # Specify a container which has Envoy and any referenced filters
-  imageEnvoy: "nicholasjackson/example-wasm-filter:dev"
