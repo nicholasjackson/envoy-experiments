@@ -23,13 +23,13 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                address: api1.container.shipyard
+                address: api1.container.shipyard.run
                 port_value: 9090
                 ipv4_compat: true
         - endpoint:
             address:
               socket_address:
-                address: api2.container.shipyard
+                address: api2.container.shipyard.run
                 port_value: 9090
                 ipv4_compat: true
 admin:
