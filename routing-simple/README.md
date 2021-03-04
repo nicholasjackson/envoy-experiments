@@ -1,3 +1,10 @@
+---
+title: Simple TCP Routing with Envoy
+author: Nic Jackson
+slug: envoy_routing
+shipyard_version: ">= 0.2.11"
+---
+
 # Simple HTTP Routing Example
 This sample shows how to do basic HTTP routing with Envoy and two Docker containers
 

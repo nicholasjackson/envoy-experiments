@@ -1,3 +1,10 @@
+---
+title: Envoy WASM Filters with Consul and Kubernetes
+author: Nic Jackson
+slug: k8s_cluster
+shipyard_version: ">= 0.2.11"
+---
+
 # Example Consul Connect running on K8s with WASM filters
 
 ## Running the example

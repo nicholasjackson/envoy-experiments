@@ -1,3 +1,10 @@
+---
+title: Simple Kubernetes Routing with Envoy
+author: Nic Jackson
+slug: k8s_cluster
+shipyard_version: ">= 0.2.11"
+---
+
 # Simple HTTP Routing Example
 This sample shows how to do basic HTTP routing with Envoy and two Docker containers
 

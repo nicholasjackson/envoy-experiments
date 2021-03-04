@@ -23,12 +23,14 @@ k8s_cluster "k3s" {
 
 helm "consul" {
   cluster = "k8s_cluster.k3s"
-  chart = "github.com/hashicorp/consul-helm"
+
+  // chart = "github.com/hashicorp/consul-helm?ref=crd-controller-base"
+  chart = "github.com/hashicorp/consul-helm?ref=v0.28.0"
   values = "./files/consul-values.yaml"
 
   health_check {
     timeout = "60s"
-    pods = ["release=consul"]
+    pods = ["app=consul"]
   }
 }
 

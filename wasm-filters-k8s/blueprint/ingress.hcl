@@ -1,33 +1,39 @@
-k8s_ingress "consul-http" {
-  cluster = "k8s_cluster.k3s"
-
-  network {
-    name = "network.local"
+ingress "consul-http" {
+  source {
+    driver = "local"
+    
+    config {
+      port = 18500
+    }
   }
-
-  service  = "consul-consul-server"
-
-  port {
-    local  = 8500
-    remote = 8500
-    host   = 18500
-    open_in_browser = "/"
+  
+  destination {
+    driver = "k8s"
+    
+    config {
+      cluster = "k8s_cluster.k3s"
+      address = "consul-consul-server.default.svc"
+      port = 8500
+    }
   }
 }
 
-k8s_ingress "web-http" {
-  cluster = "k8s_cluster.k3s"
-
-  network {
-    name = "network.local"
+ingress "web-http" {
+  source {
+    driver = "local"
+    
+    config {
+      port = 9090
+    }
   }
-
-  service  = "web-service"
-
-  port {
-    local  = 9090
-    remote = 9090
-    host   = 19090
-    open_in_browser = "/ui"
+  
+  destination {
+    driver = "k8s"
+    
+    config {
+      cluster = "k8s_cluster.k3s"
+      address = "web-service.default.svc"
+      port = 9090
+    }
   }
 }

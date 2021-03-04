@@ -26,7 +26,7 @@ class AddHeader extends Context {
   onResponseHeaders(a: u32): FilterHeadersStatusValues {
     const root_context = this.root_context;
     if (root_context.configuration == "") {
-      stream_context.headers.response.add("Version", "v1.13");
+      stream_context.headers.response.add("Version", "v1.14");
     } else {
       stream_context.headers.response.add("hello", root_context.configuration);
     }
@@ -35,4 +35,4 @@ class AddHeader extends Context {
   }
 }
 
-registerRootContext(() => { return RootContextHelper.wrap(new AddHeaderRoot()); }, "add_header");
+registerRootContext(() => { return RootContextHelper.wrap(new AddHeaderRoot()); }, "version_header");
