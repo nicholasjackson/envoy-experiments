@@ -1,3 +1,10 @@
+---
+title: Simple TCP Load balancing with Envoy
+author: Nic Jackson
+slug: k8s_cluster
+shipyard_version: ">= 0.2.11"
+---
+
 # Simple TCP Load balancing
 This sample shows how to do basic TCP load balancing with Envoy and two Docker containers
 

@@ -1,4 +1,4 @@
-ingress "frontend" {
+container_ingress "frontend" {
     target = "container.envoy"
 
     port {
